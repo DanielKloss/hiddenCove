@@ -71,59 +71,5 @@
 </main>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
 
-  h1,
-  h3 {
-    font-family: "Limelight", cursive;
-    font-weight: normal;
-    margin: 0;
-  }
-
-  p {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  input[type="text"],
-  input[type="number"] {
-    border: 2px solid gold;
-    opacity: 0.5;
-    background: transparent;
-    width: 90%;
-    margin: 0 auto 1rem auto;
-    font-size: 2rem;
-    color: gold;
-    text-align: center;
-  }
-
-  input[type="text"]:focus,
-  input[type="number"]:focus {
-    outline: none;
-    opacity: 1;
-  }
-
-  button {
-    max-width: 50%;
-    margin: 0 auto;
-    background: gold;
-    border: 0.15rem black solid;
-    padding: 1rem;
-    font-family: "Limelight", cursive;
-    font-size: 1.2rem;
-  }
-
-  .correct {
-    color: green;
-  }
 </style>
