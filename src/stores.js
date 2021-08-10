@@ -19,7 +19,7 @@ export const clues = writable([
     id: 2,
     info: "Find the place with 104 legs",
     clue: "What was the last recipe cooked?",
-    answers: ["pie"],
+    answers: ["pie", "meat pie"],
     correct: "The murder was not cannibalism..."
   },
   {

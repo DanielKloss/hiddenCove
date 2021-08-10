@@ -41,17 +41,17 @@
   <h1>COVE HOTEL</h1>
   {#if currentClue == null && !finalClue}
     <section in:fade>
-      <p>Enter your checkin code</p>
+      <p>Enter your check in code</p>
       <input type="number" bind:value={teamCode}/>
       <button on:click={()=>submitTeamCode()}>
-		Checkin
+		CHECK IN
       </button>
     </section>
   {:else if finalClue}
   <section in:fade>
     <h3>Congratulations</h3>
       <p>You should now have everything you need to work out the murderer, weapon and loaction</p>
-      <p>You should also now have the means to work out how to report your findings to the police</p>
+      <p>You should also now have the means to work out how to report your findings to the police...</p>
     </section>
   {:else}
     {#key currentClue}
@@ -114,16 +114,13 @@
   }
 
   button {
-    width: 80%;
+    max-width: 50%;
     margin: 0 auto;
-    background: transparent;
-    border: none;
-    padding: 0;
-  }
-
-  img {
-    width: 90%;
-    margin: 0 auto;
+    background: gold;
+    border: 0.15rem black solid;
+    padding: 1rem;
+    font-family: "Limelight", cursive;
+    font-size: 1.2rem;
   }
 
   .correct {
