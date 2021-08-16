@@ -10,7 +10,6 @@
   let currentClue;
   let givenAnswer;
   let correct;
-  let correctMessage;
 
   function submitTeamCode() {
     currentClue = $clues[teamCode - 1234];
@@ -18,21 +17,23 @@
 
   function submitAnswer() {
     if (currentClue.answers.includes(givenAnswer.toLowerCase())) {
+      console.log($clues[currentClue.id]);
+      console.log($clues.length);
       givenAnswer = "";
       correct = currentClue.correct;
       correctClues++;
-      correctMessage = true;
+      console.log(correctClues);
       if (correctClues == $clues.length) {
         currentClue = null;
       } else {
-        if ($clues[currentClue.id] == $clues.length) {
+        if ($clues[currentClue.id].id + 1 == $clues.length) {
           currentClue = $clues[0];
         } else {
           currentClue = $clues[currentClue.id + 1];
         }
       }
     } else {
-      console.log("incorrect");
+      correct = "Incorrect, try again!";
     }
   }
 </script>
